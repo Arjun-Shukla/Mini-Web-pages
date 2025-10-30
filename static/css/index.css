@@ -131,7 +131,7 @@ body {
   animation: swipe 3s ease;
 } */
 
-@media (min-width: 320px) and (max-width: 420px) {
+@media (width: 320px) {
   #heading h3 {
     left: 0rem;
     position: absolute;
