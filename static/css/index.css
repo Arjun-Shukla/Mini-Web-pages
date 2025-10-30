@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-image: url("../../media/moon.jpg");
+  background-image: url("../../media/scenery-1750130_1920.jpg");
   /* height: 200rem;
     width:300rem; */
   background-repeat: no-repeat;
@@ -132,7 +132,7 @@ body {
 
   #heading h3 {
     width: 20%;
-    left: 0rem;
+    left: 0.5rem;
     position: absolute;
     line-height: 3rem;
     font-size: 2.4rem;
@@ -146,7 +146,7 @@ body {
   }
 
   .container {
-    left: 0rem;
+    left: 0.5rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -160,7 +160,7 @@ body {
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     border-radius: 1rem;
-    opacity: 0.7;
+    opacity: 1.0;
     position: absolute;
     top: 33rem;
     transition: all 0.6s ease;
