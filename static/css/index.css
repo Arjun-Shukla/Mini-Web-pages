@@ -1,5 +1,6 @@
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -16,28 +17,116 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  scroll-behavior: smooth;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   height: 25rem;
   width: 70vw;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  border: 2px solid white;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   border-radius: 1rem;
   opacity: 0.7;
   position: absolute;
   top: 22rem;
+  transition: all 0.6s ease;
+}
+#heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  animation: glow 3s ease infinite;
 }
 
-h3 {
+#heading h3 {
   font-size: 3rem;
   color: white;
   text-align: center;
   position: absolute;
   top: 2.5rem;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ffd97a, 0 0 30px #ffd97a;
 }
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffd97a, 0 0 30px #ffd97a;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 40px #ffd97a, 0 0 60px #ffd97a;
+  }
+}
+
+#text {
+  width: 60%;
+  color: black;
+  z-index: 1;
+  /* color: #2c3e50;  */
+  /* background: linear-gradient(90deg, #4a90e2, #2c3e50, #b3e5ff); */
+  -webkit-background-clip: text;
+  background: linear-gradient(90deg, #d7d2cc, #ffffff, #b0c4de);
+  -webkit-background-clip: text;
+  /* font-weight: 500; */
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 2rem;
+}
+
+.btn a{
+  text-decoration:none;
+}
+#nextbtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 30rem;
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-radius: 2rem;
+  transition: all 0.6s ease;
+  background: linear-gradient(90deg, #4a90e2, #a8c7ff);
+  cursor: pointer;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+#nextbtn:hover {
+  transform: scale(1.05);
+    background: linear-gradient(90deg, #a8c7ff, #ffffff);
+  box-shadow: 0 0 15px rgba(168,199,255,0.7);
+}
+
+/* @keyframes swipe {
+  from {
+    background-color: #ffffff;
+  }
+
+  to {
+
+    background: linear-gradient(to right (red,blue));
+  }
+} */
+
+/* #nextbtn:focus {
+  animation: swipe 3s ease;
+} */
