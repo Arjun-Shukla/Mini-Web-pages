@@ -5,10 +5,372 @@ html {
 
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
-body{
-    background: linear-gradient(135deg, #fdfbfb, #ebedee);
-    background-color: #dbe9f4;
+body {
+  /* background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    background-color: #dbe9f4; */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  /* background: linear-gradient(160deg, #1c1b33, #3d3a6b, #b5a8d9); */
+  background: linear-gradient(180deg, #0f1626, #2c1a33, #4a1942);
+  /* background: linear-gradient(145deg, #2a1a40, #4b2e65, #735d9b); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10rem;
+  height: 55rem;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  /* background-color: red; */
+}
+
+.first {
+  color: white;
+  width: 50%;
+  position: absolute;
+  top: 20rem;
+  line-height: 2.7rem;
+  animation: begin 20s ease 1;
+  transition: all 20s ease;
+  animation-delay: 2s;
+  opacity: 0;
+    animation: glow 1s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #fff, 0 0 12px #ffd97a, 0 0 20px #ffd97a;
+}
+
+.second {
+  color: white;
+  width: 50%;
+  position: relative;
+  top: 20rem;
+  line-height: 2.7rem;
+  opacity: 0;
+  animation: begin2 20s ease 1;
+  transition: all 20s ease;
+  animation-delay: 20s;
+    animation: glow 1s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #fff, 0 0 12px #ffd97a, 0 0 20px #ffd97a;
+}
+
+.third {
+  color: white;
+  width: 50%;
+  position: relative;
+  top: 20rem;
+  line-height: 2.7rem;
+  opacity: 0;
+  animation: begin3 20s ease 1;
+  transition: all 20s ease;
+  animation-delay: 40s;
+    animation: glow 1s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #fff, 0 0 12px #ffd97a, 0 0 20px #ffd97a;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 12px #ffd97a, 0 0 20px #ffd97a;
+  }
+  to {
+    text-shadow: 0 0 12px #fff, 0 0 20px #ffd97a, 0 0 30px #ffd97a;
+  }
+}
+
+@keyframes begin {
+  0% {
+    display: none;
+    position: absolute;
+    top: -15rem;
+    opacity: 0;
+  }
+
+  10% {
+    display: block;
+    position: absolute;
+    top: 0rem;
+    opacity: 0;
+  }
+
+  20% {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    opacity: 1.2;
+  }
+
+  30% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  40% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  50% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+  60% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  70% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  80% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  90% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  100% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+}
+
+@keyframes begin2 {
+  0% {
+    display: none;
+    position: absolute;
+    top: -15rem;
+    opacity: 0;
+  }
+
+  10% {
+    display: block;
+    position: absolute;
+    top: 0rem;
+    opacity: 0;
+  }
+
+  20% {
+    display: block;
+    position: absolute;
+    top: 8rem;
+    opacity: 1.2;
+  }
+
+  30% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  40% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  50% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+  60% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  70% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  80% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  90% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  100% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+}
+
+@keyframes begin3 {
+  0% {
+    display: none;
+    position: absolute;
+    top: -15rem;
+    opacity: 0;
+  }
+
+  10% {
+    display: block;
+    position: absolute;
+    top: 0rem;
+    opacity: 0;
+  }
+
+  20% {
+    display: block;
+    position: absolute;
+    top: 5rem;
+    opacity: 1.2;
+  }
+
+  30% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  40% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  50% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+  60% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  70% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  80% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  90% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+
+  100% {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    opacity: 1.2;
+  }
+}
+
+
+@media only screen and (min-width:319px) and (max-width:460px) {
+
+.text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10rem;
+  height: 55rem;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  /* background-color: red; */
+}
+
+.first {
+  color: white;
+  width: 90%;
+  position: absolute;
+  top: 20rem;
+  line-height: 2.7rem;
+  animation: begin 20s ease 1;
+  transition: all 20s ease;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+
+.third {
+  color: white;
+  width: 90%;
+  position: relative;
+  top: 20rem;
+  line-height: 2.7rem;
+  opacity: 0;
+  animation: begin3 20s ease 1;
+  transition: all 20s ease;
+  animation-delay: 40s;
+}
+
+.second {
+  color: white;
+  width: 90%;
+  position: relative;
+  top: 20rem;
+  line-height: 2.7rem;
+  opacity: 0;
+  animation: begin2 20s ease 1;
+  transition: all 20s ease;
+  animation-delay: 20s;
+}
 }
