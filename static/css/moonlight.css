@@ -1,0 +1,155 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
+  background-color: #0f2027;
+  /* background-color: #2A7B9B; */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 93vw;
+  height: 40rem;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 3rem;
+  position: relative;
+  top: 10rem;
+  left: 3rem;
+  opacity: 1;
+  /* gap: 2rem;
+  overflow-x: auto; */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 25rem;
+  background-color: whitesmoke;
+  position: relative;
+  top: 0rem;
+  border-radius: 3rem;
+  margin: 2rem;
+  box-shadow: -1px 5px 25px -12px black;
+  transition: all 0.3s ease-in-out;
+  padding: 0rem;
+  flex-wrap: wrap;
+  transition: transform 0.3s;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.card img {
+  border-radius: 2rem;
+  position: relative;
+  bottom: 1.2rem;
+  height:50%; 
+  width:50%;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  border: 2px solid red;
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  top: 0rem;
+  width: 85%;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 319px) and (max-width: 460px) {
+
+    /*Responsiveness*/
+    
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    height: 99rem;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 3rem;
+    position: relative;
+    top: 10rem;
+    left: 3rem;
+    opacity: 1;
+     gap: 4rem;
+
+  }
+
+  .card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 28rem;
+  background-color: whitesmoke;
+  position: relative;
+  top: 0rem;
+  border-radius: 3rem;
+  margin: 1rem;
+  box-shadow: -1px 5px 25px -12px black;
+  transition: all 0.3s ease-in-out;
+  padding: 0rem;
+  flex-wrap: wrap;
+  transition: transform 0.3s;
+  transform-origin: center;
+  will-change: transform;
+
+  }
+
+  .card img {
+  border-radius: 2rem;
+  position: relative;
+  bottom: 2rem;
+  height:40%; 
+  width:80%;
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  top: 0rem;
+  width: 80%;
+}
+}
