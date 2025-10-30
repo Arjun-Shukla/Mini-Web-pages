@@ -133,7 +133,7 @@ body {
 
 @media (width: 320px) {
   #heading h3 {
-    left: 0rem;
+    left: -1rem;
     position: absolute;
     line-height: 3rem;
     font-size: 2.5rem;
@@ -147,7 +147,7 @@ body {
   }
 
   .container {
-    left: 0.5rem;
+    left: -1rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
